@@ -27,7 +27,7 @@ export default Vue.extend({
 
   methods: {
     buttonTap() {
-      Http.getJSON('http://localhost:8090/forecast?freetext=chicago').then(
+      Http.getJSON('https://catfact.ninja/facty').then(
         (result: any) => {
           console.log(result);
         },
